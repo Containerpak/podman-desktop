@@ -5,5 +5,5 @@ COPY icon.png /usr/share/icons/hicolor/128x128/apps/podman-desktop.png
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libasound2t64 libgtk-3-0 libnss3 && \
-    mkdir -p /opt/podman-desktop && tar -xzf /tmp/source --strip-components=1 -C /opt/podman-desktop && ln -s /opt/podman-desktop/podman-desktop /usr/bin/podman-desktop && printf '[Desktop Entry]\nName=Podman Desktop\nExec=podman-desktop %U\nIcon=podman-desktop\nType=Application\nCategories=Development;System;\n' > /usr/share/applications/io.podman_desktop.PodmanDesktop.desktop && \
+    mkdir -p /opt/podman-desktop && tar -xzf /tmp/source --strip-components=1 -C /opt/podman-desktop && ln -s /opt/podman-desktop/podman-desktop /usr/bin/podman-desktop && printf '[Desktop Entry]\nName=Podman Desktop\nExec=podman-desktop %%U\nIcon=podman-desktop\nType=Application\nCategories=Development;System;\n' > /usr/share/applications/io.podman_desktop.PodmanDesktop.desktop && \
     cpak-clean-junk
