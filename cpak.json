@@ -1,34 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Podman Desktop",
   "description": "Manage containers from a desktop interface.",
   "version": "1.29.1",
-  "image": "ghcr.io/containerpak/podman-desktop:main",
+  "image": "ghcr.io/containerpak/podman-desktop@sha256:41a180134904afaaa25c87dd73ff9d497eb000bd94e501af67935be3e1b3b409",
   "binaries": [
     "/usr/bin/podman-desktop"
   ],
   "desktop_entries": [
     "/usr/share/applications/io.podman_desktop.PodmanDesktop.desktop"
   ],
-  "dependencies": [
-
-  ],
-  "addons": [
-
-  ],
+  "dependencies": [],
+  "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -46,18 +37,13 @@
         "access": "read-write"
       }
     ],
-    "env": [
-
-    ],
+    "env": [],
     "network": true,
     "process": false,
     "userNamespaces": true,
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": [
-
-    ]
+    "asRoot": false
   }
 }
