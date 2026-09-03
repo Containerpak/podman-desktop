@@ -1,6 +1,6 @@
 FROM ubuntu:26.04 AS source
 
-ADD --checksum=sha256:7986f2815ec33958bb6e4d96bfce60446bcda0b81faa1baa88f0d94a2cdc72c9 https://github.com/podman-desktop/podman-desktop/releases/download/v1.29.1/podman-desktop-1.29.1-x64.tar.gz /tmp/source
+ADD --checksum=sha256:b2e9df4e1e6186c5da9b2608ef5e7e507da9c27ab2764e475b24df1ca2bc6b7a https://github.com/podman-desktop/podman-desktop/releases/download/v1.29.3/podman-desktop-1.29.3-x64.tar.gz /tmp/source
 
 RUN mkdir -p /out && \
     tar -xzf /tmp/source --strip-components=1 -C /out
