@@ -4,7 +4,7 @@
   "name": "Podman Desktop",
   "description": "Manage containers from a desktop interface.",
   "version": "1.29.3",
-  "image": "ghcr.io/containerpak/podman-desktop@sha256:511a1ddb2d1806893137d6fb8315796d094de5285d130329dd29afac22588e9f",
+  "image": "ghcr.io/containerpak/podman-desktop@sha256:611960f3280df4f26834f796f2a77faaa909330a2015bdb280e3879d1d2c311a",
   "binaries": [
     "/usr/bin/podman-desktop"
   ],
